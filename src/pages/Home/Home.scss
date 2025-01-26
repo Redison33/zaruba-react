@@ -1,0 +1,47 @@
+.welcome {
+    background: radial-gradient(50% 37.27% at 50% 62.73%, #2e2e2e 0%, #000 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+    padding: 226px 0 206px 0;
+    &__container {
+        max-width: 1240px;
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 78px;
+            font-weight: 700;
+            line-height: 78px;
+            // max-width: ;
+            margin: 0;
+            margin-bottom: 24px;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0;
+            margin-bottom: 80px;
+        }
+        .welcome__buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            button {
+                border: none;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 8px;
+                background: #212123;
+                padding: 18px 32px;
+                &:first-child {
+                    background: #ff7d00;
+                }
+            }
+        }
+    }
+}

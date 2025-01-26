@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-Regular'), local('Inter Regular'), url('../assets/fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-Medium'), local('Inter Medium'), url('../assets/fonts/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-SemiBold'), local('Inter SemiBold'), url('../assets/fonts/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter-Bold'), local('Inter Bold'), url('../assets/fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    // padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    position: relative;
+    color: #fff;
+}
+button {
+    font-family: 'Inter';
+}
+input {
+    font-family: 'Inter';
+}
+.container {
+    max-width: 1556px;
+    margin: 0 auto;
+}
