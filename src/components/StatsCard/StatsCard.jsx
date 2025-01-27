@@ -1,10 +1,12 @@
+import './StatsCard.scss';
 function StatsCard(props) {
-    console.log(props);
-
     return (
-        <article>
-            <h3></h3>
-            <p></p>
+        <article className="stats__card">
+            <h3>
+                <span className="stats-card__icon" dangerouslySetInnerHTML={{ __html: props.img }} />
+                {props.name}
+            </h3>
+            <p>{props.count}</p>
         </article>
     );
 }

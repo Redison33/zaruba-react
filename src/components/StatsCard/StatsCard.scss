@@ -1,0 +1,32 @@
+.stats__card {
+    display: flex;
+    padding: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 24px;
+    background: #0d0d0d;
+    width: 100%;
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    p {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+    }
+    &:first-child {
+        background: linear-gradient(270deg, #0d0d0d -0.07%, rgba(13, 13, 13, 0) 100%);
+    }
+    &:last-child {
+        background: linear-gradient(90deg, #0d0d0d -0.07%, rgba(13, 13, 13, 0) 100%);
+    }
+}
