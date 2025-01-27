@@ -4,8 +4,8 @@ function ServicesCard(props) {
         <article className="services__card">
             <h3>{props.name}</h3>
             <ul>
-                {props.possibilities.map((item) => (
-                    <li>{item}</li>
+                {props.possibilities.map((item, index) => (
+                    <li key={index}>{item}</li>
                 ))}
             </ul>
             <div className="card__wrap">

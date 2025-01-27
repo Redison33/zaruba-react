@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Header.scss';
 import logo from '@/assets/img/logo.png';
 
-function App() {
+function Header() {
     const [count, setCount] = useState(0);
 
     return (
@@ -46,4 +46,4 @@ function App() {
     );
 }
 
-export default App;
+export default Header;
