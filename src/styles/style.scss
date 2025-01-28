@@ -28,6 +28,7 @@
 html {
     box-sizing: border-box;
     // padding: 0;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -61,12 +62,20 @@ input {
 }
 @media (max-width: 1640px) {
     .container {
-        // margin: 0;
         margin-left: 42px;
         margin-right: 42px;
     }
-    section {
-        // margin-left: 42px;
-        // margin-right: 42px;
+}
+
+@media (max-width: 990px) {
+    .container {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+@media (max-width: 630px) {
+    .container {
+        margin-left: 12px;
+        margin-right: 12px;
     }
 }

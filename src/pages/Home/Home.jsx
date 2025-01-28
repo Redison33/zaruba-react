@@ -176,7 +176,7 @@ function App() {
                     ))}
                 </div>
             </section>
-            <section className="play">
+            <section className="play" id="play">
                 <div className="play__container container">
                     <h2 className="play__title">Как играть?</h2>
                     <p className="play__text">
@@ -200,7 +200,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section className="rules">
+            <section className="rules" id="rules">
                 <div className="rules__container container">
                     <span className="rules__tag">Выжить любой ценой!</span>
                     <h2 className="rules__title">Правила игры</h2>
@@ -319,7 +319,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section className="boosty">
+            <section className="boosty" id="boosty">
                 <div className="boosty__container container">
                     <div className="boosty__content">
                         <h2 className="boosty__title">

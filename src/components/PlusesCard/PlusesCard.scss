@@ -25,6 +25,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: normal;
+        margin: 0;
     }
     &:first-child {
         background: linear-gradient(270deg, #0d0d0d -0.07%, rgba(13, 13, 13, 0) 100%);
@@ -36,5 +37,72 @@
     }
     &:last-child {
         background: linear-gradient(90deg, #0d0d0d -0.07%, rgba(13, 13, 13, 0) 100%);
+    }
+}
+@media (max-width: 1450px) {
+    .pluses__card {
+        border-radius: 24px;
+        padding: 24px;
+        gap: 12px;
+        span {
+            padding: 10px 12px;
+            border-radius: 12px;
+        }
+        h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 990px) {
+    .pluses__card {
+        width: 100%;
+        border-radius: 24px;
+        padding: 24px;
+        gap: 12px;
+        span {
+            padding: 10px 12px;
+            border-radius: 12px;
+        }
+        h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+        }
+        &:first-child {
+            background: #0d0d0d;
+        }
+
+        &:last-child {
+            background: #0d0d0d;
+        }
+    }
+}
+@media (max-width: 990px) {
+    .pluses__card {
+        width: 100%;
+        border-radius: 24px;
+        padding: 24px;
+        gap: 12px;
+        span {
+            padding: 5px 6px;
+            border-radius: 12px;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
     }
 }

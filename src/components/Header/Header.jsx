@@ -3,18 +3,29 @@ import './Header.scss';
 import logo from '@/assets/img/logo.png';
 
 function Header() {
-    const [count, setCount] = useState(0);
-
+    const [isActive, setIsActive] = useState(false);
+    const handleClick = () => {
+        setIsActive(!isActive); // Переключает состояние
+        isActive ? document.querySelector('body').removeAttribute('style') : (document.querySelector('body').style.overflow = 'hidden');
+    };
     return (
         <header className="header">
             <div className="header__container container">
-                <nav className="header__nav nav">
+                <button className={`header__burger ${isActive ? 'header__burger--active' : ''}`} onClick={() => handleClick()}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a className="header__logo" href="">
+                    <img src={logo} alt="" />
+                </a>
+                <nav className={`header__nav nav ${isActive ? 'nav--active' : ''}`}>
                     <ul className="nav__list list">
                         <li className="list__item">
-                            <a href="">Как играть?</a>
+                            <a href="#play">Как играть?</a>
                         </li>
                         <li className="list__item">
-                            <a href="">Правила игры</a>
+                            <a href="#rules">Правила игры</a>
                         </li>
                         <li className="list__item">
                             <a href="">
@@ -22,7 +33,7 @@ function Header() {
                             </a>
                         </li>
                         <li className="list__item">
-                            <a href="">Пожертвования</a>
+                            <a href="#boosty">Пожертвования</a>
                         </li>
                         <li className="list__item">
                             <a href="">Новости</a>

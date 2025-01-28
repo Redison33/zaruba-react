@@ -16,10 +16,10 @@ function Footer() {
                     <nav className="footer__nav nav">
                         <ul className="nav__list list">
                             <li className="list__item">
-                                <a href="">Как играть?</a>
+                                <a href="#play">Как играть?</a>
                             </li>
                             <li className="list__item">
-                                <a href="">Правила игры</a>
+                                <a href="#rules">Правила игры</a>
                             </li>
                             <li className="list__item">
                                 <a href="">OpenWiki</a>
@@ -28,7 +28,7 @@ function Footer() {
                                 <a href="">Обновления</a>
                             </li>
                             <li className="list__item">
-                                <a href="">Пожертвования</a>
+                                <a href="#boosty">Пожертвования</a>
                             </li>
                             <li className="list__item">
                                 <a href="">Контакты</a>
