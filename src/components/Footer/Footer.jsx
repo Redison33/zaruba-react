@@ -1,5 +1,5 @@
 import './Footer.scss';
-// import logo from '@/assets/img/logo.png';
+import logo from '@/assets/img/moments1.jpg';
 
 function Footer() {
     return (
@@ -7,7 +7,7 @@ function Footer() {
             <div className="footer__container container">
                 <div className="footer__wrap footer__wrap-top">
                     <div className="footer__logo">
-                        <img src="src/assets/img/moments1.jpg" alt="" />
+                        <img src={logo} alt="" />
                         <div className="footer__text">
                             Погрузись в мир катастроф, докажи свою ценность и попади в убежище, чтобы выжить! Настоящий вызов для твоей логики,
                             стратегии и харизмы."

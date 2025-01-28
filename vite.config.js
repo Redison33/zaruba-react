@@ -9,4 +9,5 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src'), // '@' будет указывать на папку 'src'
         },
     },
+    base: '/zaruba-react/',
 });

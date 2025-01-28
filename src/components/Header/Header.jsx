@@ -4,8 +4,11 @@ import logo from '@/assets/img/logo.png';
 
 function Header() {
     const [isActive, setIsActive] = useState(false);
+    const navClick = () => {
+        isActive ? handleClick() : '';
+    };
     const handleClick = () => {
-        setIsActive(!isActive); // Переключает состояние
+        setIsActive(!isActive);
         isActive ? document.querySelector('body').removeAttribute('style') : (document.querySelector('body').style.overflow = 'hidden');
     };
     return (
@@ -22,7 +25,9 @@ function Header() {
                 <nav className={`header__nav nav ${isActive ? 'nav--active' : ''}`}>
                     <ul className="nav__list list">
                         <li className="list__item">
-                            <a href="#play">Как играть?</a>
+                            <a href="#play" onClick={() => navClick()}>
+                                Как играть?
+                            </a>
                         </li>
                         <li className="list__item">
                             <a href="#rules">Правила игры</a>

@@ -5,6 +5,11 @@ import PlusesCard from '@/components/PlusesCard/PlusesCard.jsx';
 import ServicesCard from '@/components/ServicesCard/ServicesCard.jsx';
 import RulesCard from '@/components/RulesCard/RulesCard';
 import ListTab from '@/components/ListTab/ListTab.jsx';
+import listImg from '@/assets/img/moments1.jpg';
+import onlineImg from '@/assets/img/online.svg';
+import momentsImg1 from '@/assets/img/moments1.jpg';
+import momentsImg2 from '@/assets/img/moments2.jpg';
+import qr from '@/assets/img/boosty_qr.png';
 function App() {
     // const [count, setCount] = useState(0);
     const statsCardData = [
@@ -106,32 +111,32 @@ function App() {
         {
             name: 'Заголовок 1',
             text: 'текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст ',
-            img: 'src/assets/img/moments1.jpg',
+            img: listImg,
         },
         {
             name: 'Заголовок 2',
             text: 'текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст ',
-            img: 'src/assets/img/moments1.jpg',
+            img: listImg,
         },
         {
             name: 'Заголовок 3',
             text: 'текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст ',
-            img: 'src/assets/img/moments1.jpg',
+            img: listImg,
         },
         {
             name: 'Заголовок 4',
             text: 'текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст ',
-            img: 'src/assets/img/moments1.jpg',
+            img: listImg,
         },
         {
             name: 'Заголовок 5',
             text: 'текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст ',
-            img: 'src/assets/img/moments1.jpg',
+            img: listImg,
         },
         {
             name: 'Заголовок 6',
             text: 'текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст ',
-            img: 'src/assets/img/moments1.jpg',
+            img: listImg,
         },
     ];
 
@@ -221,29 +226,29 @@ function App() {
                         текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
                     </p>
                     <button className="online__button">Начать играть</button>
-                    <img src="/src/assets/img/online.svg" alt="" />
+                    <img src={onlineImg} alt="" />
                 </div>
             </section>
             <section className="moments">
                 <div className="moments__container container">
                     <div className="moments__imgs">
                         <div className="moments__imgs-left">
-                            <img src="src/assets/img/moments1.jpg" alt="" />
-                            <img src="src/assets/img/moments2.jpg" alt="" />
-                            <img src="src/assets/img/moments1.jpg" alt="" />
-                            <img src="src/assets/img/moments2.jpg" alt="" />
-                            <img src="src/assets/img/moments1.jpg" alt="" />
-                            <img src="src/assets/img/moments2.jpg" alt="" />
-                            <img src="src/assets/img/moments1.jpg" alt="" />
+                            <img src={momentsImg1} alt="" />
+                            <img src={momentsImg2} alt="" />
+                            <img src={momentsImg1} alt="" />
+                            <img src={momentsImg2} alt="" />
+                            <img src={momentsImg1} alt="" />
+                            <img src={momentsImg2} alt="" />
+                            <img src={momentsImg1} alt="" />
                         </div>
                         <div className="moments__imgs-right">
-                            <img src="src/assets/img/moments2.jpg" alt="" />
-                            <img src="src/assets/img/moments1.jpg" alt="" />
-                            <img src="src/assets/img/moments2.jpg" alt="" />
-                            <img src="src/assets/img/moments1.jpg" alt="" />
-                            <img src="src/assets/img/moments2.jpg" alt="" />
-                            <img src="src/assets/img/moments1.jpg" alt="" />
-                            <img src="src/assets/img/moments2.jpg" alt="" />
+                            <img src={momentsImg2} alt="" />
+                            <img src={momentsImg1} alt="" />
+                            <img src={momentsImg2} alt="" />
+                            <img src={momentsImg1} alt="" />
+                            <img src={momentsImg2} alt="" />
+                            <img src={momentsImg1} alt="" />
+                            <img src={momentsImg2} alt="" />
                         </div>
                     </div>
                     <div className="moments__content">
@@ -262,7 +267,7 @@ function App() {
             </section>
             <section className="start">
                 <div className="start__container container">
-                    <img src="src/assets/img/moments1.jpg" alt="" />
+                    <img src={momentsImg1} alt="" />
                     <div className="start__content">
                         <h2 className="start__title">Играть вместе веселее!</h2>
                         <p className="start__text">
@@ -387,7 +392,7 @@ function App() {
                         </div>
                     </div>
                     <div className="boosty__qr">
-                        <img src="src/assets/img/boosty_qr.png" alt="" />
+                        <img src={qr} alt="" />
                     </div>
                 </div>
             </section>
