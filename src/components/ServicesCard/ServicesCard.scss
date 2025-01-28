@@ -43,6 +43,11 @@
             font-weight: 500;
             line-height: normal;
             border: none;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                background-color: #2b2b2e;
+            }
         }
     }
 
@@ -53,6 +58,10 @@
         .card__wrap {
             button {
                 background-color: #ff7d00;
+
+                &:hover {
+                    background-color: #ff8f25;
+                }
             }
         }
     }
